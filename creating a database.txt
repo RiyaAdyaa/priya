@@ -1,0 +1,8 @@
+import sqlite3
+
+db_name = 'knowledge.db'
+conn = sqlite3.connect('C:/Users/PROTOSEM_06/knowledge.db')
+cur = conn.cursor()
+cur.execute('drop table if exists qa')
+cur.execute('create table qa (question text, answer text)')
+conn.close()
