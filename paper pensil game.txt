@@ -1,0 +1,53 @@
+import random
+
+prompt = 'Enter your choice:\nR or r for rock\nP or p for paper\nS or s for scissors\npi or st for pencil\nQ or q to quit\n'
+
+while True:  
+    user = input(prompt).lower()  
+
+    if user == 'q':
+        break 
+
+    comp = random.choice(['rock', 'paper', 'scissors','pensil']) 
+    print('Opposite choice:', comp)
+
+    if user == 'r':
+        if comp == 'rock':
+            print('you tie')
+        if comp == 'paper':
+            print('you lose')
+        if comp == 'scissors':
+            print('you win')
+        if comp == 'pensil':
+            print('you win')
+           
+
+    if user == 'p':
+        if comp == 'rock':
+            print('you win')
+        if comp == 'paper':
+            print('you tie')
+        if comp == 'scissors':
+            print('you lost')
+        if comp == 'pensil':
+            print('you lost')
+
+    if user == 's':
+        if comp == 'rock':
+            print('you lose')
+        if comp == 'paper':
+            print('you win')
+        if comp == 'tie':
+            print('you win')
+        if comp == 'pensil':
+            print('you won')
+        
+    if user == 'pi':
+        if comp == 'paper':
+            print('you won')
+        if comp == 'rock':
+            print('you lost')
+        if comp == 'stone':
+            print('you lost')
+        if comp == 'pensil':
+            print('you tie')
